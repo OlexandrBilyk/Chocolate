@@ -1,0 +1,38 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+}
+.container {
+  width: 100%;
+  max-width: 767px;
+  min-width: 320px;
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media (min-width: 1024px) {
+    max-width: 1200px;
+  }
+
+  padding: 0 15px;
+  margin: 0 auto;
+}
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+input {
+  outline: none;
+  border: none;
+}
