@@ -1,0 +1,106 @@
+.header {
+  padding: 25px 0;
+  @media (min-width: 1200px) {
+    padding: 28px 0;
+  }
+
+  &__pages {
+    @media (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 188px;
+    }
+  }
+
+  & .container {
+    @media (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 137px;
+    }
+  }
+}
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 111%;
+  color: #111;
+  text-transform: uppercase;
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
+  &__icon {
+    width: 21px;
+    height: 21px;
+    @media (min-width: 1200px) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.nav-list {
+  display: none;
+  @media (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+  &__item{
+    position: relative;
+  }
+
+  &__link {
+    @media (min-width: 1200px) {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      line-height: 114%;
+      color: #111;
+
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 24px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: #fd9222;
+        transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      &:hover::after {
+        width: 50%;
+      }
+
+      &:hover {
+        color: #fd9222;
+      }
+    }
+  }
+}
+.header-social {
+  display: none;
+  @media (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  &__icon {
+    @media (min-width: 1200px) {
+      width: 24px;
+      height: 24px;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover {
+        fill: #fd9222;
+      }
+    }
+  }
+}
