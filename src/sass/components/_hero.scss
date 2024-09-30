@@ -1,0 +1,200 @@
+.backdrop {
+  padding: 395px 16px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+
+  background-image: url('../images/backrounds/mobhero.jpg');
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 0.020833333333333332),
+    (-o-min-device-pixel-ratio: 1/48),
+    (min-resolution: 2dpi),
+    (-webkit-min-device-pixel-ratio: 192),
+    (-o-min-device-pixel-ratio: 192/1),
+    (min-resolution: 192dppx) {
+    background-image: url('../images/backrounds/mobhero@2x.jpg');
+  }
+
+  @media (min-width: 768px) {
+    padding: 671px 40px 40px;
+    background-image: url('../images/backrounds/tabhero.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 0.020833333333333332),
+      (-o-min-device-pixel-ratio: 1/48),
+      (min-resolution: 2dpi),
+      (-webkit-min-device-pixel-ratio: 192),
+      (-o-min-device-pixel-ratio: 192/1),
+      (min-resolution: 192dppx) {
+      background-image: url('../images/backrounds/tabhero@2x.jpg');
+    }
+  }
+  @media (min-width: 1200px) {
+    padding-top: 381px;
+    background-image: url('../images/backrounds/deschero.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 0.020833333333333332),
+      (-o-min-device-pixel-ratio: 1/48),
+      (min-resolution: 2dpi),
+      (-webkit-min-device-pixel-ratio: 192),
+      (-o-min-device-pixel-ratio: 192/1),
+      (min-resolution: 192dppx) {
+      background-image: url('../images/backrounds/deschero@2x.jpg');
+    }
+  }
+}
+.hero {
+  padding: 0 20px 72px;
+
+  @media (min-width: 768px) {
+    padding: 0 32px 50px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 32px 72px;
+  }
+  & .container {
+    padding: 0;
+    min-width: 250px;
+  }
+  &__pages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    @media (max-width: 364px) {
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      gap: 0;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &__text {
+    max-width: 299px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    color: #fff;
+    margin-bottom: 32px;
+
+    @media (min-width: 768px) {
+      max-width: 491px;
+      font-size: 28px;
+    }
+  }
+}
+.hero-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+
+  &__btn {
+    border-radius: 100px;
+    padding: 12px 28px;
+    background-color: transparent;
+    border: 1px solid #fff;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      color: #fd9222;
+      border-color: #fd9222;
+    }
+
+    @media (min-width: 768px) {
+      padding: 14px 40px;
+      margin-bottom: 0;
+    }
+
+    &--light {
+      border: none;
+      background-color: #fd9222;
+
+      &:hover {
+        color: #fd9222;
+        background-color: #fcf1e0;
+      }
+    }
+  }
+}
+.scroll-down {
+  &__link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 117%;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media (min-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  &__btn {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media (min-width: 768px) {
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    fill: #fd9222;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media (min-width: 768px) {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &__link {
+    &:hover {
+      color: #fd9222;
+    }
+  }
+
+  &__btn {
+    &:hover {
+      background-color: #fd9222;
+    }
+  }
+
+  &__icon {
+    &:hover {
+      fill: #fff;
+    }
+  }
+}
