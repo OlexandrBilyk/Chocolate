@@ -1,29 +1,105 @@
-<section class="sellers">
+<section class="sellers" id="sellers">
   <div class="container">
+    <h3 class="sellers__title">
+      top <span class="sellers__span">Sellers</span>
+    </h3>
     <ul class="sellers-list">
       <li class="sellers-list__item">
         <div class="sellers-list__thumb">
-          <img src="#" alt="Chocolate" />
+          <picture>
+            <source
+              srcset="
+                ./images/descsellers1.jpg    1x,
+                ./images/descsellers1@2x.jpg 2x
+              "
+              media="(min-width:1200px)"
+            />
+            <source
+              srcset="
+                ./images/tabsellers1.jpg    1x,
+                ./images/tabsellers1@2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                ./images/mobsellers1.jpg    1x,
+                ./images/mobsellers1@2x.jpg 2x
+              "
+              media="(min-width:320px)"
+            />
+            <img
+              class="sellers-list__img"
+              src="./images/mobsellers1.jpg"
+              alt="Chocolate"
+            />
+          </picture>
         </div>
+        <p class="sellers-list__text">
+          Crazy enough chocolate originates from a bean just like the coffee
+          bean called Cacao. Cacao has been around for thousands of years and
+          was first discovered by the Native American tribe called the Mayans.
+        </p>
       </li>
       <li class="sellers-list__item">
         <div class="sellers-list__thumb">
-          <img src="#" alt="Chocolate" />
+          <picture>
+            <source
+              srcset="
+                ./images/descsellers2.jpg    1x,
+                ./images/descsellers2@2x.jpg 2x
+              "
+              media="(min-width:1200px)"
+            />
+            <source
+              srcset="
+                ./images/tabsellers2.jpg    1x,
+                ./images/tabsellers2@2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                ./images/mobsellers2.jpg    1x,
+                ./images/mobsellers2@2x.jpg 2x
+              "
+              media="(min-width:320px)"
+            />
+            <img
+              src="./images/mobsellers2.jpg"
+              alt="Chocolate"
+              class="sellers-list__img"
+            />
+          </picture>
         </div>
+        <button class="sellers-list__btn sellers-list__btn--tab" type="button">
+          Buy now
+        </button>
       </li>
       <li class="sellers-list__item">
         <div class="sellers-list__thumb">
-          <img src="#" alt="Chocolate" />
+          <picture>
+            <source
+              srcset="
+                ./images/descsellers3.jpg    1x,
+                ./images/descsellers3@2x.jpg 2x
+              "
+              media="(min-width:1200px)"
+            />
+            <img
+              src="./images/descsellers3.jpg"
+              alt="Chocolate"
+              class="sellers-list__img"
+            />
+          </picture>
         </div>
+        <button
+          class="sellers-list__btn sellers-list__btn--desktop"
+          type="button"
+        >
+          Buy now
+        </button>
       </li>
     </ul>
-    <div class="sellers-discovery">
-      <p class="sellers-discovery__text">
-        Crazy enough chocolate originates from a bean just like the coffee bean
-        called Cacao. Cacao has been around for thousands of years and was first
-        discovered by the Native American tribe called the Mayans.
-      </p>
-      <button class="sellers-discovery__btn" type="button">Buy now</button>
-    </div>
   </div>
 </section>
