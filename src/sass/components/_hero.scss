@@ -76,13 +76,13 @@
       justify-content: space-between;
     }
   }
-  &__text {
+  &__title {
     max-width: 299px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: getFont("Montserrat");
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    color: #fff;
+    color: getColor("white");
     margin-bottom: 32px;
 
     @media (min-width: 768px) {
@@ -102,19 +102,19 @@
     border-radius: 100px;
     padding: 12px 28px;
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid getColor("white");
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: #fff;
+    color: getColor("white");
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
-      color: #fd9222;
-      border-color: #fd9222;
+      color: getColor("orange");
+      border-color: getColor("orange");
     }
 
     @media (min-width: 768px) {
@@ -124,10 +124,10 @@
 
     &--light {
       border: none;
-      background-color: #fd9222;
+      background-color: getColor("orange");
 
       &:hover {
-        color: #fd9222;
+        color: getColor("orange");
         background-color: #fcf1e0;
       }
     }
@@ -135,11 +135,11 @@
 }
 .scroll-down {
   &__link {
-    font-family: 'Montserrat', sans-serif;
+    font-family: getFont("Montserrat");
     font-weight: 500;
     font-size: 12px;
     line-height: 1.17;
-    color: #fff;
+    color: getColor("white");
 
     display: flex;
     align-items: center;
@@ -159,7 +159,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: getColor("white");
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media (min-width: 768px) {
@@ -171,7 +171,7 @@
   &__icon {
     width: 16px;
     height: 16px;
-    fill: #fd9222;
+    fill: getColor("orange");
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media (min-width: 768px) {
@@ -182,19 +182,20 @@
 
   &__link {
     &:hover {
-      color: #fd9222;
+      color: getColor("orange");
     }
   }
 
   &__btn {
     &:hover {
-      background-color: #fd9222;
+      background-color: getColor("orange");
     }
   }
 
   &__icon {
     &:hover {
-      fill: #fff;
+      fill: getColor("white");
     }
   }
 }
+
