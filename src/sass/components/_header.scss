@@ -23,10 +23,10 @@
   }
 }
 .logo {
-  font-family: 'Montserrat', sans-serif;
+  font-family: getFont("Montserrat");
   font-weight: 700;
   line-height: 1.11;
-  color: #111;
+  color: getColor("black");
   text-transform: uppercase;
   @media (min-width: 1200px) {
     font-size: 18px;
@@ -57,10 +57,10 @@
 
   &__link {
     @media (min-width: 1200px) {
-      font-family: 'Montserrat', sans-serif;
+      font-family: getFont("Montserrat");
       font-weight: 500;
       line-height: 1.14;
-      color: #111;
+      color: getColor("black");
 
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -72,7 +72,7 @@
         left: 0;
         width: 0;
         height: 1px;
-        background-color: #fd9222;
+        background-color: getColor("orange");
         transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
       &:hover::after {
@@ -80,7 +80,7 @@
       }
 
       &:hover {
-        color: #fd9222;
+        color: getColor("orange")
       }
     }
   }
@@ -96,12 +96,13 @@
 
   &__icon {
     @media (min-width: 1200px) {
+      fill: getColor("black");
       width: 24px;
       height: 24px;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
       &:hover {
-        fill: #fd9222;
+        fill: getColor("orange");
       }
     }
   }
