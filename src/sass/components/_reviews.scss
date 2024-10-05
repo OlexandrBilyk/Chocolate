@@ -1,0 +1,23 @@
+.swiper {
+    height: 288px;
+    @media screen and (min-width: 1200px) {
+      height: 297px;
+    }
+  }
+
+  .swiper-pagination {
+    @include flex;
+    gap: 13px;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    background-color: rgba(17, 17, 17, 0.3);
+  }
+  
+  .swiper-pagination-bullet-active {
+    width: 28px;
+    background-color: getColor('text-third');
+    border-radius: 15px;
+  }
