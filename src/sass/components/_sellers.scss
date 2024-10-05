@@ -1,13 +1,13 @@
 .sellers {
   padding-bottom: 72px;
   &__title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: getFont("Montserrat");
     font-weight: 600;
     font-size: 20px;
     line-height: 120%;
     text-transform: uppercase;
     text-align: center;
-    color: #fd9222;
+    color: getColor("orange");
 
     @media (min-width: 768px) {
       font-size: 24px;
@@ -15,7 +15,7 @@
     }
   }
   &__span {
-    color: #111;
+    color: getColor("black");
   }
 }
 .sellers-list {
@@ -62,9 +62,9 @@
   }
   &__text {
     max-width: 306px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: getFont("Montserrat");
     line-height: 129%;
-    color: #111;
+    color: getColor("black");
 
     @media (min-width: 1200px) {
       max-width: 407px;
@@ -73,11 +73,11 @@
   &__btn {
     border-radius: 100px;
     padding: 12px 28px;
-    background-color: #fd9222;
+    background-color: getColor("orange");
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: getFont("Montserrat");
     font-weight: 600;
-    color: #fff;
+    color: getColor("white");
     margin: 0 auto;
 
     @media (min-width: 768px) {
