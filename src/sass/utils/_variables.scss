@@ -1,0 +1,18 @@
+$colors: (
+  'black': #111,
+  'dark-purple': #1e1823,
+  'orange': #fd9222,
+  'white': #fff,
+);
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+$fonts: (
+  'Montserrat': #{'Montserrat',
+  sans-serif},
+  'Roboto': #{'Roboto',
+  sans-serif},
+);
+@function getFont($key) {
+  @return map-get($fonts, $key);
+}
