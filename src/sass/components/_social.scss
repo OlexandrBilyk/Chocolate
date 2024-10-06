@@ -1,31 +1,25 @@
 .social {
- background-image: url("/src/images/backrounds/mobsocialsbg.jpg");
+ background-image: url("/images/backrounds/mobsocialsbg.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
-@media (min-width:320px), (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url("/src/images/backrounds/mobsocialsbg@2x.jpg");
+  @media (min-width:320px), (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url("/images/backrounds/mobsocialsbg@2x.jpg");
   }
 @media (min-width:768px){
      
-    background-image: url("/src/images/backrounds/tabsocialsbg.jpg");
+    background-image: url("/images/backrounds/tabsocialsbg.jpg");
   }
-@media (min-width:768px), (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url("/src/images/backrounds/tabsocialsbg@2x.jpg");
+  @media (min-width:768px), (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url("/images/backrounds/tabsocialsbg@2x.jpg");
   }
 @media (min-width:1200px){
-    background-image: url("/src/images/backrounds/descsocialbg.jpg");
+    background-image: url("/images/backrounds/descsocialbg.jpg");
   }
 
-  @media (min-width:1200px), (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  background-image: url("/src/images/backrounds/descsocialsbg@2x.jpg");
-}
+  @media (min-width:1200px), (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url("/images/backrounds/descsocialsbg@2x.jpg");
+  }
 padding: 66px;
 @media(min-width: 768px){
     padding: 79px;
@@ -41,7 +35,7 @@ padding: 66px;
 font-weight: 600;
 font-size: 20px; 
 line-height: 1.20;
-letter-spacing: -0.03em;
+letter-spacing: 0.03em;
 text-transform: uppercase;
 text-align: center;
 color: #fff;
@@ -64,7 +58,7 @@ font-size: 14px;
 
  
 line-height: 1.29;
-letter-spacing: -0.02em;
+letter-spacing: 0.02em;
 text-align: center;
 color: #fff;
 margin-bottom: 33px;
