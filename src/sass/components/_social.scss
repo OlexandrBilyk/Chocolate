@@ -1,0 +1,96 @@
+.social {
+ background-image: url("/images/backrounds/mobsocialsbg.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+  @media (min-width:320px), (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url("/images/backrounds/mobsocialsbg@2x.jpg");
+  }
+@media (min-width:768px){
+     
+    background-image: url("/images/backrounds/tabsocialsbg.jpg");
+  }
+  @media (min-width:768px), (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url("/images/backrounds/tabsocialsbg@2x.jpg");
+  }
+@media (min-width:1200px){
+    background-image: url("/images/backrounds/descsocialbg.jpg");
+  }
+
+  @media (min-width:1200px), (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url("/images/backrounds/descsocialsbg@2x.jpg");
+  }
+padding: 66px;
+@media(min-width: 768px){
+    padding: 79px;
+}
+@media(min-width: 1200px){
+    padding: 70px;
+}
+
+}
+
+.social__title {
+    font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+font-size: 20px; 
+line-height: 1.20;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+margin-bottom: 33px;
+@media(min-width: 768px){
+    font-size: 24px;
+    line-height: 1.17;
+
+}
+@media(min-width: 1200px){
+    font-size: 24px;
+    line-height: 1.17;
+
+}
+}
+.social__info {
+    font-family: 'Montserrat', sans-serif ;
+font-weight: 400;
+font-size: 14px;
+
+ 
+line-height: 1.29;
+letter-spacing: 0.02em;
+text-align: center;
+color: #fff;
+margin-bottom: 33px;
+
+}
+.social__btn {
+    border-radius: 100px;
+padding: 12px 28px;
+width: 128px;
+height: 41px;
+font-family:'Montserrat', sans-serif ;
+font-weight: 600;
+font-size: 18px;
+color: #fff;
+margin: 0 auto;
+background-color: darkorange;
+@media(min-width: 768px){
+padding: 14px 40px;
+width: 172px;
+height: 50px;
+
+}
+@media(min-width: 1200px){
+  
+padding: 14px 40px;
+width: 172px;
+height: 50px;
+}
+
+}
+.social__btn:hover{
+background-color: orange;
+color: chocolate;
+
+}
