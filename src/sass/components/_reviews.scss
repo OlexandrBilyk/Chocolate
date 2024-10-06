@@ -6,7 +6,7 @@
   }
 
   .swiper-pagination {
-    @include flex;
+    display: flex;
     gap: 13px;
   }
   
