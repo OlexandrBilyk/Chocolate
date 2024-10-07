@@ -1,0 +1,2 @@
+new Swiper(".reviews-slider",{grabCursor:!0,slidesPerView:6,pagination:{el:".swiper-pagination",clickable:!0},keyboard:{enabled:!0},freeMode:!0,autoplay:{delay:2e3,stopOnLastSlide:!1,disableOnInteraction:!0},speed:750,breakpoints:{375:{slidesPerView:1,grabCursor:!0,spaceBetween:0},768:{slidesPerView:2,grabCursor:!0,spaceBetween:16},1200:{slidesPerView:3,grabCursor:!0,spaceBetween:28}}});
+//# sourceMappingURL=index.c4188318.js.map
