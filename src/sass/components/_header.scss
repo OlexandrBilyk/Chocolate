@@ -32,6 +32,10 @@
   line-height: 1.11;
   color: getColor('black');
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
   @media (min-width: 1200px) {
     font-size: 18px;
   }

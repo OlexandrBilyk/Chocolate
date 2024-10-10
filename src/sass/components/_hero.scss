@@ -78,11 +78,11 @@
   }
   &__title {
     max-width: 299px;
-    font-family: getFont("Montserrat");
+    font-family: getFont('Montserrat');
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    color: getColor("white");
+    color: getColor('white');
     margin-bottom: 32px;
 
     @media (min-width: 768px) {
@@ -102,19 +102,19 @@
     border-radius: 100px;
     padding: 12px 28px;
     background-color: transparent;
-    border: 1px solid getColor("white");
+    border: 1px solid getColor('white');
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: getColor("white");
+    color: getColor('white');
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
-      color: getColor("orange");
-      border-color: getColor("orange");
+      color: getColor('orange');
+      border-color: getColor('orange');
     }
 
     @media (min-width: 768px) {
@@ -124,10 +124,10 @@
 
     &--light {
       border: none;
-      background-color: getColor("orange");
+      background-color: getColor('orange');
 
       &:hover {
-        color: getColor("orange");
+        color: getColor('orange');
         background-color: #fcf1e0;
       }
     }
@@ -135,17 +135,21 @@
 }
 .scroll-down {
   &__link {
-    font-family: getFont("Montserrat");
+    font-family: getFont('Montserrat');
     font-weight: 500;
     font-size: 12px;
     line-height: 1.17;
-    color: getColor("white");
+    color: getColor('white');
 
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 12px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      color: getColor('orange');
+    }
 
     @media (min-width: 768px) {
       font-size: 14px;
@@ -159,8 +163,16 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: getColor("white");
+    background-color: getColor('white');
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: getColor('orange');
+
+      .scroll-down__icon {
+        fill: getColor('white');
+      }
+    }
 
     @media (min-width: 768px) {
       width: 38px;
@@ -174,28 +186,13 @@
     fill: getColor("orange");
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    &:hover {
+      fill: getColor('white');
+    }
+
     @media (min-width: 768px) {
       width: 22px;
       height: 22px;
     }
   }
-
-  &__link {
-    &:hover {
-      color: getColor("orange");
-    }
-  }
-
-  &__btn {
-    &:hover {
-      background-color: getColor("orange");
-    }
-  }
-
-  &__icon {
-    &:hover {
-      fill: getColor("white");
-    }
-  }
 }
-
