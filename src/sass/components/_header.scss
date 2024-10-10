@@ -4,6 +4,7 @@
     padding: 28px 0;
   }
 
+
   &__pages {
     @media (min-width: 1200px) {
       display: flex;
@@ -14,7 +15,10 @@
   }
 
   & .container {
+    position: relative;
+
     @media (min-width: 1200px) {
+      position: static;
       display: flex;
       align-items: center;
       justify-content: center;
