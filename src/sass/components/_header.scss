@@ -6,6 +6,7 @@
 
 
   &__pages {
+
     @media (min-width: 1200px) {
       display: flex;
       align-items: center;
@@ -36,7 +37,12 @@
   align-items: center;
   justify-content: center;
   gap: 4px;
+  margin-right: 139px;
+  @media (min-width: 768px) {
+    margin-right: 504px;
+  }
   @media (min-width: 1200px) {
+    margin: 0;
     font-size: 18px;
   }
   &__icon {
