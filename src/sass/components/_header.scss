@@ -4,14 +4,10 @@
     padding: 28px 0;
   }
 
-
   &__pages {
-
     @media (min-width: 1200px) {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 188px;
+      gap: 178px;
     }
   }
 
@@ -19,11 +15,12 @@
     position: relative;
 
     @media (min-width: 1200px) {
+      
       position: static;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 137px;
+      gap: 127px;
     }
   }
 }
@@ -63,7 +60,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    gap: 20px;
   }
   &__item {
     position: relative;
