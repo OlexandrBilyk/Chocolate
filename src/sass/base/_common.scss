@@ -23,6 +23,7 @@ body {
   margin: 0 auto;
 }
 button {
+  background-color: getColor("orange");
   display: block;
   cursor: pointer;
   border: none;
