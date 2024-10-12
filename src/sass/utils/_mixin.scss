@@ -1,0 +1,25 @@
+@mixin text(
+  $font-size: 14px,
+  $font-weight: 400,
+  $line-height: 1.29,
+  $letter-spacing: 0.02em,
+  $text-align: left
+) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  letter-spacing: $line-height;
+  line-height: $letter-spacing;
+  text-align: $text-align;
+}
+@mixin flex(
+  $justify-content: center,
+  $flex-direction: row,
+  $flex-wrap: nowrap,
+  $align-items: center
+) {
+  display: flex;
+  flex-wrap: $flex-wrap;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-direction: $flex-direction;
+}
