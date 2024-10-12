@@ -1,8 +1,11 @@
 html {
   scroll-behavior: smooth;
 }
+a, button, input{
+  outline: none;
+}
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: getFont("Montserrat");
   font-weight: 400;
   font-size: 14px;
   font-style: normal;

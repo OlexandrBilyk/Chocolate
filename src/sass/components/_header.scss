@@ -15,7 +15,6 @@
     position: relative;
 
     @media (min-width: 1200px) {
-      
       position: static;
       display: flex;
       align-items: center;
@@ -86,11 +85,13 @@
         background-color: getColor('orange');
         transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
-      &:hover::after {
+      &:hover::after,
+      &:focus::after {
         width: 50%;
       }
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: getColor('orange');
       }
     }
@@ -104,7 +105,12 @@
     justify-content: center;
     gap: 18px;
   }
-
+  &__link {
+    &:hover,
+    &:focus .header-social__icon {
+      fill: getColor('orange');
+    }
+  }
   &__icon {
     @media (min-width: 1200px) {
       fill: getColor('black');
@@ -112,7 +118,8 @@
       height: 24px;
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-      &:hover {
+      &:hover,
+      &:focus {
         fill: getColor('orange');
       }
     }

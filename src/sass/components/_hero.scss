@@ -117,7 +117,8 @@
       color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: getColor('orange');
       border-color: getColor('orange');
     }
@@ -131,7 +132,8 @@
       border: none;
       background-color: getColor('orange');
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: getColor('orange');
         background-color: #fcf1e0;
       }
@@ -152,7 +154,8 @@
     gap: 12px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: getColor('orange');
     }
 
@@ -171,7 +174,8 @@
     background-color: getColor('white');
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: getColor('orange');
 
       .scroll-down__icon {
@@ -191,7 +195,8 @@
     fill: getColor('orange');
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover {
+    &:hover,
+    &:focus {
       fill: getColor('white');
     }
 
