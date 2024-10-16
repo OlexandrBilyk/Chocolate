@@ -66,9 +66,7 @@
     min-width: 250px;
   }
   &__pages {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    @include flex($flex-direction: row);
     gap: 32px;
     @media (max-width: 364px) {
       align-items: center;
@@ -82,11 +80,10 @@
     }
   }
   &__title {
+    @include text(20px, 500, 1.2);
+
     max-width: 299px;
     font-family: getFont('Montserrat');
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
     color: getColor('white');
     margin-bottom: 32px;
 
@@ -101,6 +98,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  @include flex(center, row, wrap, center);
   gap: 14px;
 
   &__btn {
@@ -109,8 +107,9 @@
     background-color: transparent;
     border: 1px solid getColor('white');
 
+    @include text($font-weight: 600);
+
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
     color: getColor('white');
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -142,15 +141,11 @@
 }
 .scroll-down {
   &__link {
+    @include text(12px, 500, 1.17);
     font-family: getFont('Montserrat');
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.17;
     color: getColor('white');
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex(center, $align-items: center);
     gap: 12px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -167,9 +162,7 @@
   &__btn {
     width: 28px;
     height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex(center, $align-items: center);
     border-radius: 50%;
     background-color: getColor('white');
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
