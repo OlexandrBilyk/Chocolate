@@ -23,18 +23,20 @@ background-position: center;
   }
 
  
-padding: 66px;
+padding: 66px 0;
 @media(min-width: 768px){
-    padding: 79px;
+    padding: 79px 0;
 }
 @media(min-width: 1200px){
-    padding: 70px;
+    padding: 70px 0;
 }
 
-
+.container{
+  min-width: 300px;
+}
 
 &__title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: getFont('Montserrat');
 font-weight: 600;
 font-size: 20px; 
 line-height: 1.20;
@@ -59,19 +61,20 @@ margin: 0 auto 33px;
 }
 &__info {
 
-    font-family: 'Montserrat', sans-serif ;
+    font-family:  getFont('Montserrat');
 font-weight: 400;
 font-size: 14px;
  
  
 line-height: 1.29;
-letter-spacing: 0.02em;
+letter-spacing: -0.02em;
 text-align: center;
 color: getColor("white");
 margin: 0 auto 33px;
-max-width: 467px;
-@media(min-width: 1200px){
- text-align: center;
+max-width: 326px;
+@media(min-width: 768px){
+ 
+ max-width: 467px;
 
 }
 
@@ -79,19 +82,19 @@ max-width: 467px;
 .social__btn {
     border-radius: 100px;
 
-width: 128px;
-height: 41px;
+
 padding: 12px 28px;
-font-family:'Montserrat', sans-serif ;
+font-family:  getFont('Montserrat');
 font-weight: 600;
-font-size: 18px;
+font-size: 14px;
+line-height: 1.28;
 color: getColor("white");
 margin: 0 auto;
 background-color: getColor("orange");
 @media(min-width: 768px){
+  font-size: 18px;
+  line-height: 1.22;
 padding: 14px 40px;
-width: 172px;
-height: 50px;
 
 }
 @media(min-width: 1200px){
@@ -101,7 +104,7 @@ width: 172px;
 height: 50px;
 }
 &:hover{
-  background-color: getColor("orange");
+  background-color: #FCF1E0;
   color: getColor("orange");
   
   }

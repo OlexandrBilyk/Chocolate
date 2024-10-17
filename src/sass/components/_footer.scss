@@ -1,0 +1,129 @@
+.footer {
+  background-color: #1e1823;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  @media (min-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+
+&-top {
+  display: flex;
+
+  flex-wrap: wrap;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 34px;
+}
+}
+.chocomood__text {
+  font-family: ('Montserrat');
+  font-weight: 500;
+  font-size: 24px;
+
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: getColor('white');
+  max-width: 300px;
+  margin-bottom: 31px;
+
+&--orange {
+  color: getColor('orange');
+}
+}
+.footer__con {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  padding-bottom: 64px;
+}
+.footer-contacts {
+  margin-top: 36px;
+
+  display: flex;
+  align-items: flex-start;
+
+  flex-direction: column;
+  gap: 8px;
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
+  @media (min-width: 1200px) {
+    margin-top: 0;
+  }
+  &__title {
+    margin-bottom: 17px;
+    font-family: ('Montserrat');
+    font-weight: 500;
+    font-size: 14px;
+  
+    line-height: 1.29;
+    text-align: center;
+    color: getColor('white');
+    @media(min-width: 768px){
+        margin-bottom: 11px;
+
+    }
+  }
+  &__connection {
+    font-family: getFont('Montserrat');
+    font-weight: 400;
+    font-size: 14px;
+  
+    line-height: 1.29;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: getColor('white');
+  }
+}
+
+
+.footer-media {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+
+&__svg {
+  width: 22px;
+  height: 22px;
+  fill: getColor('white');
+}
+}
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+  }
+
+
+&__link {
+  font-family: getFont('Montserrat');
+  font-weight: 500;
+  font-size: 14px;
+
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: getColor('white');
+}
+&::after {
+  content: '';
+
+// .footer-nav-list__link:hover::after{
+//     color: aqua;
+// }
+&:hover {
+  color: antiquewhite;
+}
+}
+}
