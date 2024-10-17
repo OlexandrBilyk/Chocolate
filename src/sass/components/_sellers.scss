@@ -1,12 +1,9 @@
 .sellers {
   padding-bottom: 72px;
   &__title {
+    @include text(20px, 600, 1.2, 0.02em, center);
     font-family: getFont('Montserrat');
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 120%;
     text-transform: uppercase;
-    text-align: center;
     color: getColor('orange');
 
     @media (min-width: 768px) {
@@ -19,11 +16,7 @@
   }
 }
 .sellers-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
+  @include flex(center, column, wrap, center);
   @media (min-width: 768px) {
     gap: 16px;
     flex-direction: row;
@@ -62,8 +55,8 @@
   }
   &__text {
     max-width: 306px;
+    @include text();
     font-family: getFont('Montserrat');
-    line-height: 129%;
     color: getColor('black');
 
     @media (min-width: 1200px) {
@@ -76,7 +69,7 @@
     background-color: getColor('orange');
 
     font-family: getFont('Montserrat');
-    font-weight: 600;
+    @include text($font-weight: 600);
     color: getColor('white');
     margin: 0 auto;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
