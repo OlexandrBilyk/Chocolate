@@ -6,7 +6,7 @@
 
   &__pages {
     @media (min-width: 1200px) {
-      display: flex;
+      @include flex();
       gap: 178px;
     }
   }
@@ -16,22 +16,17 @@
 
     @media (min-width: 1200px) {
       position: static;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flex(center, $align-items: center);
       gap: 127px;
     }
   }
 }
 .logo {
+  @include text(14px, 700, 1.11);
   font-family: getFont('Montserrat');
-  font-weight: 700;
-  line-height: 1.11;
   color: getColor('black');
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(center, $align-items: center);
   gap: 4px;
   margin-right: 139px;
   @media (min-width: 768px) {
