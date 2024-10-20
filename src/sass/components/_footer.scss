@@ -33,8 +33,9 @@
 }
 }
 .footer__con {
+  width: 100%;
   display: flex;
-  @include flex( space-between, row, nowrap,);
+  @include flex( space-between, row, nowrap,flex-start);
   padding-bottom: 64px;
 }
 .footer-contacts {
