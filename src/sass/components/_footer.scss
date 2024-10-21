@@ -35,7 +35,7 @@
 .footer__con {
   width: 100%;
   display: flex;
-  @include flex( space-between, row, nowrap,flex-start);
+  @include flex( space-between, row, nowrap);
   padding-bottom: 64px;
 }
 .footer-contacts {
