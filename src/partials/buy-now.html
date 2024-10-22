@@ -1,0 +1,150 @@
+<div class="backdrop is-hidden" backdrop-buy>
+  <form class="modal-buy" id="modal">
+    <button class="product-modal__close" data-close-buy type="button">
+      <svg class="modal-close__svg">
+        <use href="/src/images/icons/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="products-modal__title">
+      <span class="products-modal__title products-modal__title--color"
+        >BUY </span
+      >NOW
+    </h2>
+
+    <ul class="products-modal__list">
+      <li class="products-modal__item">
+        <picture>
+          <source
+            media="(min-width: 320px)"
+            srcset="
+              ./src/images/mobbuynow1.png    1x,
+              ./src/images/mobbuynow1@2x.png 2x
+            "
+          />
+
+          <img
+            src="./src/images/mobbuynow1.png"
+            class="products-modal-item__img"
+            alt="100g"
+          />
+        </picture>
+        <div class="products-modal-item__outline">
+          <p class="products-modal-item__text">100 g</p>
+        </div>
+      </li>
+      <li class="product-modal__item">
+        <picture>
+          <source
+            media="(min-width: 320px)"
+            srcset="
+              ./src/images/mobbuynow2.png    1x,
+              ./src/images/mobbuynow2@2x.png 2x
+            "
+          />
+          <img
+            src="./src/images/mobbuynow2.png"
+            class="products-modal-item__img"
+            alt="200g"
+          />
+        </picture>
+        <div class="products-modal-item__outline">
+          <p class="products-modal-item__text">200 g</p>
+        </div>
+      </li>
+      <li class="product-modal__item slick__slide">
+        <picture>
+          <source
+            media="(min-width: 320px)"
+            srcset="
+              ./src/images/mobbuynow3.png    1x,
+              ./src/images/mobbuynow3@2x.png 2x
+            "
+          />
+          <img
+            src="./src/images/mobbuynow3.png"
+            class="products-modal-item__img"
+            alt="300g"
+          />
+        </picture>
+        <div class="products-modal-item__outline">
+          <p class="products-modal-item__text">300 g</p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="person-info-block">
+      <label class="person-info" for="person__Name"
+        >Personal information
+        <input type="text" placeholder="Name" class="person-info__input" id="person__Name" maxlength="17" required />
+      </label>
+        <input
+          type="text"
+          placeholder="Surname"
+          id="person__Name"
+          class="person-info__second-input"
+          minlength="3"
+          required
+        />
+      
+    </div>
+    <ul class="other-information-list">
+      <li class="other-information-list__item">
+        <label class="other-information-list__label" for="other__Email">
+          Email
+          <input
+            type="text"
+            placeholder="Enter your email"
+            class="other-information-list__input"
+            id="other__Email"
+            minlength="7"
+            required
+          />
+        </label>
+      </li>
+      <li class="other-information-list__item">
+        <label class="other-information-list__label" for="other__Tel"
+          >Phone number
+          <input
+            type="text"
+            placeholder="Phone number"
+            class="other-information-list__input"
+            id="other__Tel"
+            maxlength="40"
+            minlength="5"
+            required
+          />
+        </label>
+      </li>
+      <li class="other-information-list__item">
+        <label class="other-information-list__label" for="other__Card"
+          >Card number
+          <input
+            type="text"
+            placeholder="Enter card"
+            class="other-information-list__input"
+            id="other__Card"
+            minlength="7"
+            required
+          />
+          <svg class="other-information-list-label__svg">
+            <use href="./src/images/icons/symbol-defs.svg#icon-mastercard"></use>
+          </svg>
+        </label>
+      </li>
+      <li class="other-information-list__item">
+        <label class="other-information-list__label" for="other__Comment"
+          >Comment
+          <textarea
+            placeholder="Enter text"
+            class="other-information-list__textarea"
+            id="other__Comment"
+            maxlength="1200"
+          ></textarea>
+        </label>
+      </li>
+    </ul>
+    <button type="submit" class="modal-btn-submit" data-open-discount>
+      Submit
+    </button>
+  </form>
+</div>
