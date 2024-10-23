@@ -27,13 +27,14 @@
   color: getColor('white');
   max-width: 300px;
   margin-bottom: 31px;
-
+@media(min-width:1200px){
+  width: 300px;
+}
 &--orange {
   color: getColor('orange');
 }
 }
 .footer__con {
-  width: 100%;
   display: flex;
   @include flex( space-between, row, nowrap);
   padding-bottom: 64px;
@@ -94,7 +95,7 @@
   width: 22px;
   height: 22px;
   fill: getColor('white');
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
    
     fill: getColor('orange');
@@ -112,17 +113,34 @@
     align-items: center;
   }
 
+&__item{
+  position: relative;
+}
 
 &__link {
   font-family: getFont('Montserrat');
   @include text(14px, 500, 1.14, -0.02em, center);
   color: getColor('white');
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 
-&__link:hover {
+
+&:hover {
   color: getColor("orange");
 }
-
+&::after{
+  content: '';
+  position: absolute;
+  top: 29px;
+  left: 0;
+  width: 0px;
+  height: 4px;
+  background-color: getColor('orange');
+  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+&:hover::after,
+      &:focus::after {
+        width: 70%;
+      }
+}
 }
