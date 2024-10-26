@@ -20,6 +20,7 @@
 }
 
 .proces-block__list {
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: getColor('white');
@@ -43,7 +44,7 @@
   }
 }
 
-.production__list-title {
+.proces-list__title {
   color: getColor('black');
   @include text(20px 600);
   margin-bottom: 20px;
@@ -54,19 +55,19 @@
   }
 }
 
-.production__list-item {
+.proces-list__item {
   display: flex;
   list-style-type:circle;
 }
 
-.production__item-text {
+.proces-list__text{
   color: getColor('black');
   @include text(18px 400);
   margin-bottom: 24px;
   margin-left: 8px;
 }
 
-.production-video-block {
+.proces-block__video {
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
