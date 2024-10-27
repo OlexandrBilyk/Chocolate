@@ -5,11 +5,9 @@ a, button, input{
   outline: none;
 }
 body {
-  font-family: getFont("Montserrat");
-  font-weight: 400;
-  font-size: 14px;
-  font-style: normal;
-  line-height: normal;
+  font-family: getFont('Montserrat');
+  @include text(14px, 400);
+  background-color: #fafafa;
 }
 .container {
   width: 100%;
@@ -44,6 +42,8 @@ input {
 .swiper-pagination {
   display: flex;
   gap: 13px;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper-pagination-bullet {
@@ -54,6 +54,6 @@ input {
 
 .swiper-pagination-bullet-active {
   width: 28px;
-  background-color: getColor('text-third');
+  background-color: getColor("orange");
   border-radius: 15px;
 }
