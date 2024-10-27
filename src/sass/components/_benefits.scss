@@ -13,7 +13,8 @@
   flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
-    gap: 32px;
+    column-gap: 60px;
+    row-gap: 50px;
   }
 
   @media screen and (min-width: 1200px) {

@@ -11,8 +11,7 @@
     color: getColor('black');
     text-transform: uppercase;
     max-width: 283px;
-    margin-bottom: 24px;
-    margin: 0 auto;
+    margin: 0 auto 24px;
     @media screen and (min-width: 768px) {
       font-size: 24px;
       line-height: 28px;
@@ -23,9 +22,8 @@
   }
   &__text {
     @include text($text-align: center);
-    margin-bottom: 32px;
     max-width: 335px;
-    margin:0 auto;
+    margin:0 auto 32px;
     @media screen and (min-width: 768px) {
       margin-bottom: 50px;
       max-width: 486px;
@@ -79,11 +77,11 @@
       }
       @media screen and (min-width: 375px) {
         width: 335px;
-        padding: 28px, 55px, 28px, 28px;
+        padding: 28px 55px 28px 28px;
       }
       @media screen and (min-width: 768px) {
         width: 336px;
-        padding: 28px, 56px, 28px, 28px;
+        padding: 28px 56px 28px 28px;
         margin-bottom: 0;
         &:nth-child(2) {
           order: 3;
@@ -162,7 +160,7 @@
   }
   &-thumb__btn {
     @include flex();
-    @include text(10px, 600, 12px);
+    @include text(10px, 400, 12px);
     color: getColor('white');
     background-color: getColor('orange');
     border: none;
@@ -174,7 +172,7 @@
       transform: scale(1);
     }
     &-benefit {
-      @include text(10px, 600, 12px);
+      @include text(10px, 400, 12px);
       color: getColor('black');
       background-color: #fafafa;
       border-radius: 35px;
