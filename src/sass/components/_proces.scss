@@ -24,6 +24,7 @@
 .proces-block__list {
   display: flex;
   flex-direction: column;
+  background-color: getColor('white');
   border-radius: 15px;
   padding: 20px 14;
   margin: 20px auto 0;
@@ -44,12 +45,13 @@
 
 .proces-list__title {
   color: getColor('black');
-  @include text(20px, 600);
+  @include text(18px, 600, 1.33);
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 28px;
     margin-top: 0;
+    max-width: 350px;
   }
 }
 
@@ -62,6 +64,14 @@
   @include text(18px 400);
   margin-bottom: 24px;
   margin-left: 8px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 464px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 410px;
+  }
 }
 
 .proces-block__video {
