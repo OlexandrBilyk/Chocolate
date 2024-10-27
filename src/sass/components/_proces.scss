@@ -1,14 +1,5 @@
-.proces__title {
-  @include text(20px, 600, $text-align: center);
-  margin-bottom: 32px;
-  @media screen and (min-width: 768px) {
-    font-size: 24px;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-  }
-}
-
-.proces__bloks {
+.proces-blocks {
+  display: flex;
   padding-bottom: 72px;
   @media screen and (min-width: 768px) {
     padding-bottom: 100px;
@@ -18,12 +9,20 @@
     padding-bottom: 128px;
   }
 }
+.proces__title {
+  @include text(20px, 600, $text-align: center);
+  color: getColor('black');
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+}
 
 .proces-block__list {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: getColor('white');
+  flex-direction: column;
   border-radius: 15px;
   padding: 20px 14;
   margin: 20px auto 0;
@@ -31,8 +30,6 @@
     padding: 32px;
     width: 614px;
     padding: 32px;
-    justify-content: center;
-    align-items: center;
     flex-shrink: 0;
   }
   @media screen and (min-width: 1200px) {
@@ -46,7 +43,7 @@
 
 .proces-list__title {
   color: getColor('black');
-  @include text(20px 600);
+  @include text(20px, 600);
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
@@ -55,12 +52,15 @@
   }
 }
 
-.proces-list__item {
-  display: flex;
-  list-style-type:circle;
+.proces-list {
+  list-style-type: disc;
 }
 
-.proces-list__text{
+.proces-list__item {
+  display: flex;
+}
+
+.proces-list__text {
   color: getColor('black');
   @include text(18px 400);
   margin-bottom: 24px;
@@ -76,9 +76,6 @@
     display: block;
   }
 }
-
-
-
 
 /*
   Player Skin Designer for Video.js
