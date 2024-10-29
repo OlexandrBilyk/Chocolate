@@ -1,5 +1,8 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-scroll-top" viewBox="0 0 57 32">
+<path d="M54.243 24.186c1.498 1.498 1.498 3.928 0 5.426s-3.928 1.498-5.426 0l-20.979-20.979-21.288 21.288c-1.498 1.498-3.928 1.498-5.426 0s-1.498-3.928 0-5.426l23.062-23.062c0.764-0.764 1.769-1.138 2.77-1.123 1.4-0.6 3.083-0.328 4.225 0.814l23.062 23.062z"></path>
+</symbol>
 <symbol id="icon-ukraine" viewBox="0 0 43 32">
 <path fill="#ffd700" style="fill: var(--color1, #ffd700)" d="M42.443 0.077h-42.12v31.345h42.12v-31.345z"></path>
 <path fill="#0057b7" style="fill: var(--color2, #0057b7)" d="M0.324 0.077h42.119v15.672h-42.12v-15.672z"></path>

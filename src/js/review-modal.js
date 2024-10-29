@@ -1,12 +1,12 @@
 const refsReview = {
   openReviewBtn: document.querySelectorAll('[data-open-review]'),
   closeReviewBtn: document.querySelector('[data-close-review]'),
-  backdropReview: document.querySelector('backdrop-review'),
+  backdropReview: document.querySelector('.backdrop-review'),
 };
 const refsFeedback = {
   openFeedbackBtn: document.querySelectorAll('[data-open-feedback]'),
   closeFeedbackBtn: document.querySelector('[data-close-feedback]'),
-  backdropFeedback: document.querySelector('backdrop-feedback'),
+  backdropFeedback: document.querySelector('.backdrop-feedback'),
 };
 
 refsReview.openReviewBtn.forEach(btn => {

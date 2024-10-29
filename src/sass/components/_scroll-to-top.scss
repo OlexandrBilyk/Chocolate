@@ -1,0 +1,52 @@
+.scroll-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  opacity: 1;
+  width: 38px;
+  height: 38px;
+  @include flex(center, $align-items: center);
+  border-radius: 50%;
+  border: 1px solid getColor('orange');
+  background-color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  animation: scrollToTop 3s linear infinite,
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: getColor('orange');
+  }
+  &:hover .scroll-top__icon {
+    fill: getColor('white');
+  }
+
+  &__icon {
+    width: 17px;
+    height: 17px;
+    fill: getColor('orange');
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      fill: getColor('white');
+    }
+  }
+}
+.scroll-top.hidden {
+  opacity: 0;
+}
+
+@keyframes scrollToTop {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
