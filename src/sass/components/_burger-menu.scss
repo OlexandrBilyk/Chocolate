@@ -16,12 +16,9 @@
     width: 290px;
   }
 }
-.is-hidden {
+.mobile-menu.is-hidden {
   transform: translateX(100%);
   pointer-events: none;
-}
-.no-scroll {
-  overflow: hidden;
 }
 .menu-open,
 .menu-close {

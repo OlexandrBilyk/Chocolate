@@ -1,8 +1,125 @@
 .swiper {
-    height: 288px;
+    height: 335px;
+    @media (min-width:768px) {
+      height: 285px;
+    }
     @media screen and (min-width: 1200px) {
-      height: 297px;
+      height: 285px;
     }
   }
 
   
+  .reviews {
+    padding: 128px 32px;
+    @media (min-width:768px) {
+      padding: 100px 32px;
+    }
+    @media (min-width:1200px) {
+      padding: 72px 20px;
+    }
+    &__title {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: -3%;
+      text-align: center;
+      margin-bottom: 32px;
+      margin-right: 10px;
+      @media (min-width:768px) {
+        margin-bottom: 50px;
+      }
+      @media (min-width:1200px) {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 50px;
+      }
+      &--color {
+        color: getColor("orange");
+      }
+    }
+    &__btn {
+      padding: 14px 40px;
+      border-radius: 100px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: 0%;
+      text-align: center;
+      color: #111111;
+      background-color: #fafafa;
+      margin: 0 auto;
+      border: 1px solid;
+      border-color: getColor("orange");
+      margin-top: 32px;
+      
+    }
+
+    &__btn:hover {
+      background-color: getColor("orange");
+    }
+
+  }
+
+  .reviews-list {
+    &__item {
+      width: 335px;
+      height: 242px;
+      box-shadow: 0 9px 27px 0 rgba(215, 228, 249, 0.25);
+      @media (min-width:768px){
+        width: 344px;
+        height: 242px;
+      }
+      @media (min-width:1200px){
+        width: 360px;
+        height: 242px;
+      }
+
+    }
+  }
+
+  .reviews-card {
+    position: relative;
+    padding: 56px 18px 42px;
+    border-radius: 15px;
+    border: 15px;
+    background-color: #FFFFFF;
+    max-height: 200px;
+    margin-top: 40px;
+    @media (min-width:768px) {
+      padding: 56px 16px 42px;
+    }
+    @media (min-width:1200px) {
+      padding: 56px 24px 42px;
+    }
+    &__img{
+      position: absolute;
+
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 80px;
+    }
+    &__name{
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    
+    &__description {
+      max-width: 299px;
+      color: #111111;
+      opacity: 70%;
+      text-align: center;
+      @media (min-width:768px) {
+        max-width: 312px;
+      }
+      @media (min-width:1200px) {
+        max-width: 312px;
+      }
+    }
+  }
