@@ -1,0 +1,303 @@
+.backdrop-buy {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0000003e;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 9;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal-buy {
+  border-radius: 15px;
+  overflow: scroll;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  width: 311px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  max-height: 90%;
+  padding: 32px 0;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: getColor('white');
+  @media (min-width: 768px) {
+    width: 609px;
+    padding: 48px 0;
+  }
+}
+
+.modal-buy__btn-close {
+  @include flex(center, row, nowrap, center);
+
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  
+
+  @media (min-width: 768px) {
+    width: 28px;
+    height: 28px;
+    top: 24px;
+    right: 24px;
+  }
+  .modal-buy__btn-close:hover, .modal-buy__btn-close:focus{
+    color: getColor("orange");
+  }
+}
+.modal-buy__close-svg {
+  width: 14px;
+  height: 24px;
+  fill: getColor('black');
+  .mobal-buy__btn-close:hover .modal-buy__close-svg:focus {
+    fill: getColor('white');
+  }
+}
+.modal-buy__title {
+  font-family: getFont('Montserrat');
+  font-weight: 600;
+  font-size: 20px;
+  // міксин
+  /* line-height: 24px; */
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: getColor('black');
+  margin-bottom: 0 auto 32px;
+  @media (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+.modal-buy__title--color {
+  color: getColor('orange');
+}
+.buy-list {
+  overflow: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 32px;
+  padding: 0 40px;
+  @media (min-width: 768px) {
+    padding: 0 48px;
+    margin-bottom: 40px;
+  }
+}
+.buy-list__item {
+  padding: 32px 32px 28px 32px;
+
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  min-width: 231px;
+  @media (min-width: 768px) {
+    padding: 24px 20px 18px;
+    min-width: 160px;
+  }
+}
+.buy-list__img {
+  margin-bottom: 16px;
+  @media (min-width: 768px) {
+    margin-bottom: 14px;
+  }
+}
+.buy-list__grams {
+  font-family: getFont('Montserrat');
+  @include text(14px, 600, 1.28, 0, center);
+  color: getColor('black');
+  background-color: #fafafa;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  width: 96px;
+  height: 33px;
+  margin-top: 33px;
+  margin: 0 auto;
+}
+.buy-list__grams:hover,
+.buy-list__grams:focus {
+  background-color: getColor('orange');
+  color: getColor('white');
+}
+
+.buy-now-form {
+  padding: 0 24px;
+  @media (min-width: 768px) {
+    padding: 48px;
+  }
+  .buy-now-form__btn {
+    margin-top: 37px;
+    font-family: getFont('Montserrat');
+    font-weight: 600;
+    font-size: 14px;
+    @include text(14px, 600, center);
+    color: getColor('white');
+    border-radius: 100px;
+    padding: 12px 28px;
+    width: 109px;
+    height: 41px;
+    margin: 0 auto;
+    margin-top: 18px;
+    background-color: p[];
+    @media (min-width: 768px) {
+      padding: 14px 40px;
+    }
+    .buy-now-form__btn:hover:focus {
+      color: getColor('orange');
+      background-color: #fcf1e0;
+    }
+  }
+
+
+.buy-now-list {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 18px;
+  @include flex(center, column, nowrap, flex-start);
+  gap: 18px;
+}
+.buy-now__item {
+  width: 100%;
+  &--tel,
+  &--card {
+    position: relative;
+  }
+}
+.buy-now-list__title {
+  font-family: GetFont('Montserrat');
+  @include text(12px, 500, -0.02em, 1.17);
+  // font-weight: 500;
+  // font-size: 12px;
+
+  // /* line-height: 14px; */
+  // line-height: 117%;
+  // letter-spacing: -0.02em;
+  color: getColor('black');
+  margin-bottom: 8px;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+.buy-now-list__person-information {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: center;
+  margin-bottom: 16px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 21px;
+  }
+}
+.buy-now-list__input,
+.buy-now-list__textarea {
+  @include text(14px,400,1.21);
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.22;
+    padding: 22px 24px;
+  }
+
+  .buy-now-list__input--tell::placeholder{
+color: #404040;
+  }
+
+  
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  .buy-now-list__input--tell {
+    padding: 14px 18px 14px 106px;
+    @media (min-width: 768px) {
+      padding: 22px 24px 22px 177px;
+    }
+  }
+}
+
+.buy-now-list__textarea {
+  resize: none;
+  height: 91px;
+  @media (min-width: 768px) {
+    height: 137px;
+  }
+}
+}
+.phone-container {
+  position: absolute;
+  top: 36px;
+  left: 16px;
+  // @include flex(center, $align);
+  gap: 8px;
+  border-right: 1.5px solid #1111110d;
+  @media (min-width: 768px) {
+    top: 48px;
+    left: 24px;
+    gap: 18px;
+    border-right: 2.5px solid #1111110d;
+  }
+}
+
+.phone-container {
+  position: absolute;
+  top: 36px;
+  left: 18px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  gap: 8px;
+  padding-right: 8px;
+  border-right: 1.5px solid;
+  @media (min-width: 768px) {
+    top: 48px;
+    left: 24px;
+    gap: 18px;
+    border-right: 2.5px solid #1111110d;
+    
+  }
+  .phone-container__svg {
+    width: 24px;
+    height: 18px;
+    @media (min-width: 768px) {
+      width: 32px;
+      height: 24px;
+    }
+  }
+}
+
+.card-container {
+  position: absolute;
+  top: 34px;
+  left: 14px;
+  @media (min-width: 768px) {
+    top: 48px;
+    right: 24px;
+    
+  }
+  .card-container__svg {
+    width: 32px;
+    height: 21px;
+    @media (min-width: 768px) {
+      width: 44px;
+      height: 30px;
+    }
+  }
+}
+
