@@ -21,7 +21,7 @@ let productSwiper = new Swiper('.products-slider', {
     speed: 750,
   
     breakpoints: {
-      375: {
+      320: {
         slidesPerView: 1,
         grabCursor: true,
         spaceBetween: 0,
