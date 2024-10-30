@@ -1,7 +1,7 @@
 const refsBuy = {
     openModalBtn: document.querySelectorAll('[data-open-buy]'),
     closeModalBtn: document.querySelector('[data-close-buy]'),
-    backdrop: document.querySelector('backdrop-buy'),
+    backdrop: document.querySelector('.backdrop-buy'),
   };
   const refsDiscount = {
     openThanksBtn: document.querySelectorAll('[data-open-thanks]'),
