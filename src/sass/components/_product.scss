@@ -1,6 +1,77 @@
 .products .swiper {
-    height: 420px;
-    @media screen and (min-width: 768px) {
-      height: 422px;
+  height: 420px;
+  @media screen and (min-width: 768px) {
+    height: 422px;
+  }
+}
+
+.products {
+  padding: 72px 0;
+  @media (min-width: 768px) {
+    padding: 100px 0;
+  }
+  @media (min-width: 1200px) {
+    padding: 128px 0;
+  }
+  &__title {
+    @include text(20px, 600, 1.2, -0.03em, center);
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    color: getColor('black');
+    @media (min-width: 768px) {
+      font-size: 24px;
+      line-height: 1.17;
+      margin-bottom: 50px;
+    }
+    &--color {
+      color: getColor('orange');
     }
   }
+}
+
+.products-list {
+  &__item {
+    padding: 32px 52px;
+    width: 335px;
+    height: 364px;
+    box-shadow: 0 9px 27px 0 rgba(215, 228, 249, 0.25);
+    border: 1px solid #1111110d;
+    border-radius: 15px;
+    background-color: getColor('white');
+    @media (min-width: 768px) {
+      padding: 32px 20px;
+      width: 270px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    @include text(18px, 600, 1.33, -0.02em, center);
+    text-transform: uppercase;
+    color: getColor('black');
+    margin-bottom: 2px;
+  }
+  &__name {
+    @include text(12px, 400, 1.16, -0.02em, center);
+    color: getColor('black');
+    margin-bottom: 18px;
+  }
+  &__btn {
+    padding: 8px 20px;
+    border-radius: 100px;
+    @include text(14px, 600, 1.21, 0, center);
+    color: getColor('black');
+    background-color: #fafafa;
+    margin: 0 auto;
+    border: 1px solid #1111110d;
+    &:hover,
+    &:focus {
+      background-color: getColor('orange');
+      color: getColor('white');
+      outline: none;
+    }
+  }
+}
