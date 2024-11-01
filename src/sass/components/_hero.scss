@@ -153,6 +153,12 @@
     &:focus {
       color: getColor('orange');
     }
+    &:hover .scroll-down__btn {
+      background-color: getColor('orange');
+    }
+    &:hover .scroll-down__icon {
+      fill: getColor('white');
+    }
 
     @media (min-width: 768px) {
       font-size: 14px;
@@ -199,4 +205,3 @@
     }
   }
 }
-
