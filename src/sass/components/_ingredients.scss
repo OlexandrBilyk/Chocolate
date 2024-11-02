@@ -43,7 +43,7 @@
 
     &__item {
       @include flex(center, column, align-item flex-start);
-      padding: 23px, 50px, 23px, 23px;
+      padding: 23px 50px 23px 23px;
       margin-bottom: 20px;
       border-radius: 15px;
       position: relative;

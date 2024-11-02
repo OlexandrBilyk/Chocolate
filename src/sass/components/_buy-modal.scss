@@ -6,8 +6,8 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-  z-index: 9;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
 }
 .is-hidden {
   opacity: 0;
@@ -37,6 +37,7 @@
   &__btn-close {
     @include flex(center, row, nowrap, center);
 
+    border-radius: 15px;
     position: absolute;
     top: 14px;
     right: 14px;
@@ -44,13 +45,21 @@
     height: 24px;
     border: none;
     background-color: transparent;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @media (min-width: 768px) {
       width: 28px;
       height: 28px;
       top: 24px;
       right: 24px;
       background-color: none;
+    }
+    &:hover,
+    &:focus {
+      background-color: getColor('orange');
+    }
+    &:hover .modal-buy__close-svg {
+      fill: getColor('white');
     }
   }
   &__close-svg {
@@ -64,7 +73,7 @@
     }
     .modal-buy__btn-close:hover &,
     .modal-buy__btn-close:focus & {
-      fill: getColor('orange');
+      fill: getColor('white');
     }
   }
   &__title {
@@ -193,9 +202,10 @@
       @include text(14px, 400, 1.21);
       width: 100%;
       padding: 14px 18px;
-      border: 1px solid #1111110D;
+      border: 1px solid rgba(17, 17, 17, 0.05);
       border-radius: 8px;
       background-color: #fafafa;
+      box-shadow: 0px 5.44px 5.44px 0px rgba(0, 0, 0, 0.03);
       @media (min-width: 768px) {
         font-size: 18px;
         line-height: 1.22;
@@ -211,6 +221,11 @@
         @media (min-width: 768px) {
           padding: 22px 24px 22px 177px;
         }
+      }
+    }
+    &__input {
+      &:user-invalid {
+        border-color: red;
       }
     }
 
