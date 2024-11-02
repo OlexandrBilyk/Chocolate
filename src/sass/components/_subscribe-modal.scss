@@ -1,0 +1,192 @@
+.backdrop-subscribe {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-subscribe.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-subscribe {
+    position: relative;
+    width: 311px;
+ 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
+    background-color: #fafafa;
+    z-index: 13;
+    border-radius: 15px;
+    overflow: hidden;
+    @media (min-width:768px) {
+        width: 538px;
+
+    }
+    &__bg {
+        width: 100%;
+        height: 169px;
+        background-color: getColor('black');
+        background-image: url('../images/backrounds/tabchocolatebg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        // ретинізація min-device-pixel-ratio, min-resolution, 
+        background-image: url('../images/backrounds/mobchocolatebg.jpg');
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 0.020833333333333332),
+    (-o-min-device-pixel-ratio: 1/48),
+    (min-resolution: 2dpi),
+    (-webkit-min-device-pixel-ratio: 192),
+    (-o-min-device-pixel-ratio: 192/1),
+    (min-resolution: 192dppx) {
+    background-image: url('../images/backrounds/mobchocolatebg@2x.jpg');
+  }
+
+  @media (min-width: 768px) {
+   
+    background-image: url('../images/backrounds/tabchocolatebg.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 0.020833333333333332),
+      (-o-min-device-pixel-ratio: 1/48),
+      (min-resolution: 2dpi),
+      (-webkit-min-device-pixel-ratio: 192),
+      (-o-min-device-pixel-ratio: 192/1),
+      (min-resolution: 192dppx) {
+      background-image: url('../images/backrounds/tabchocolatebg@2x.jpg');
+    }
+  }
+  @media (min-width: 1200px) {
+   
+    background-image: url('../images/backrounds/descchocolatebg.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 0.020833333333333332),
+      (-o-min-device-pixel-ratio: 1/48),
+      (min-resolution: 2dpi),
+      (-webkit-min-device-pixel-ratio: 192),
+      (-o-min-device-pixel-ratio: 192/1),
+      (min-resolution: 192dppx) {
+      background-image: url('../images/backrounds/descchocolatebg@2x.jpg');
+    }
+  }
+        @media (min-width:768px) {
+            height: 196px;
+             
+        }
+    }
+    &__btn-close {
+        @include flex();
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 15px;
+        right: 14px;
+        background-color: transparent;
+        @media (min-width:768px) {
+            width: 28px;
+            height: 28px;
+            top: 24px;
+            right: 24px;
+        }
+
+       
+    }
+
+    &__svg-close {
+        width: 12px;
+        height: 12px;
+        fill: getColor('white');
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+        
+        @media (min-width:768px) {
+        width: 14px;
+        height: 14px;
+        }
+
+        &:hover, &:focus {
+            fill: getColor('orange');
+            
+        }
+    }
+}
+
+.subscribe-form {
+    padding: 32px 24px;
+    @media (min-width:768px) {
+        padding: 40px;
+    }
+    &__label {
+        @include text(20px, 600, 0.8px, -0.03em, center);
+        color: getColor('black');
+        @media (min-width: 768px) {
+            font-size: 24px;
+            line-height: 28px;
+            max-width: 298px;
+        }
+        &--color {
+            color: getColor('orange');
+        }
+    }
+
+    &__input {
+        width: 263px;
+        padding: 14px 18px;
+        background-color: #fafafa;
+        border: 1px solid #1111110d;
+        border-radius: 100px;
+        margin-top: 24px;
+        &:user-invalid {
+            border-color: red; 
+        }
+        @include text(14px, 400, 0.8px, -0.02em);
+        @media (min-width: 768px)
+        {
+            font-size: 18px;
+            line-height: 22px;
+            width: 313px;
+            padding: 15px 24px;
+            margin-top: 28px;
+        }
+        &::placeholder {
+            color: #404040;
+        }
+    }
+
+    &__btn {
+        padding: 14px 18px 14px;
+        position: absolute;
+        bottom: 32px;
+        right: 24px;
+        @include text(); 
+        color: getColor('white');
+        background-color: getColor('orange');
+        border-radius: 100px;
+        @media (min-width: 768px)
+        {
+            padding: 16px 42px;
+            right: 40px;
+            bottom: 40px;
+        }
+        &:hover, &:focus {
+            background-color: rgb(252, 241, 224);
+            color: getColor('orange');
+            outline: none;
+            border: 1px solid;
+        }
+    }
+}
+
