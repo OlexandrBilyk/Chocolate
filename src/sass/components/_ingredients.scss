@@ -23,7 +23,7 @@
   &__text {
     @include text($text-align: center);
     max-width: 335px;
-    margin:0 auto 32px;
+    margin: 0 auto 32px;
     @media screen and (min-width: 768px) {
       margin-bottom: 50px;
       max-width: 486px;
