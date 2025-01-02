@@ -26,7 +26,18 @@ function toggleModalReview() {
 }
 
 refsFeedback.openFeedbackBtn.forEach(btn => {
-  btn.addEventListener('click', showModalFeedback);
+  btn.addEventListener('click', function () {
+    let reviewsModalInputs = document.querySelectorAll('#reviewsInput');
+    const areAllInputsFilled = Array.from(reviewsModalInputs).every(
+      input => input.value.trim() !== ''
+    );
+    if (
+      areAllInputsFilled &&
+      reviewsModalInputs[1].value.trim().endsWith('@gmail.com')
+    ) {
+      showModalFeedback();
+    }
+  });
 });
 
 refsFeedback.closeFeedbackBtn.addEventListener('click', hideModalFeedback);
@@ -35,7 +46,6 @@ function showModalFeedback() {
   refsFeedback.backdropFeedback.classList.remove('is-hidden');
   refsReview.backdropReview.classList.add('is-hidden');
 }
-
 function hideModalFeedback() {
   refsFeedback.backdropFeedback.classList.add('is-hidden');
   document.body.style.overflow = 'visible';
