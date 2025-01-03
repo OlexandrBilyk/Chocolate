@@ -25,20 +25,23 @@ function toggleModalBuy() {
   }
 }
 
-refsDiscount.openThanksBtn.forEach(btn => {
-  btn.addEventListener('click', function () {
-    let buyModalInputs = document.querySelectorAll('.buyInput');
-    const areAllInputsFilleds = Array.from(buyModalInputs).every(
-      el => el.value.trim() !== ''
-    );
+// refsDiscount.openThanksBtn.forEach(btn => {
+//   btn.addEventListener('click', function () {
+//     let buyModalInputs = document.querySelectorAll('.buyInput');
+//     const areAllInputsFilleds = Array.from(buyModalInputs).every(
+//       el => el.value.trim() !== ''
+//     );
 
-    if (
-      areAllInputsFilleds &&
-      buyModalInputs[2].value.trim().endsWith('@gmail.com')
-    ) {
-      showModalThanks();
-    }
-  });
+//     if (
+//       areAllInputsFilleds &&
+//       buyModalInputs[2].value.trim().endsWith('@gmail.com')
+//     ) {
+//       showModalThanks();
+//     }
+//   });
+// });
+refsDiscount.openThanksBtn.forEach(btn => {
+  btn.addEventListener('click', showModalThanks);
 });
 
 refsDiscount.closeThanksBtn.addEventListener('click', hideModalThanks);
