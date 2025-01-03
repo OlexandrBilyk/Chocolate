@@ -25,23 +25,22 @@ function toggleModalBuy() {
   }
 }
 
-// refsDiscount.openThanksBtn.forEach(btn => {
-//   btn.addEventListener('click', function () {
-//     let buyModalInputs = document.querySelectorAll('.buyInput');
-//     const areAllInputsFilleds = Array.from(buyModalInputs).every(
-//       el => el.value.trim() !== ''
-//     );
-
-//     if (
-//       areAllInputsFilleds &&
-//       buyModalInputs[2].value.trim().endsWith('@gmail.com')
-//     ) {
-//       showModalThanks();
-//     }
-//   });
-// });
 refsDiscount.openThanksBtn.forEach(btn => {
-  btn.addEventListener('click', showModalThanks);
+  btn.addEventListener('click', function () {
+    const buyModalInputs = Array.from(
+      document.querySelectorAll('.buyInput')
+    ).slice(0, 5);
+    const areAllInputsFilleds = buyModalInputs.every(
+      el => el.value.trim() !== ''
+    );
+
+    if (
+      areAllInputsFilleds &&
+      buyModalInputs[2].value.trim().endsWith('@gmail.com')
+    ) {
+      showModalThanks();
+    }
+  });
 });
 
 refsDiscount.closeThanksBtn.addEventListener('click', hideModalThanks);
